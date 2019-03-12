@@ -202,7 +202,7 @@ class Variants extends React.Component {
                         {variants.map(n => {
                             return (
                                 <TableRow key={n._id}>
-                                    <TableCell>{n.categoryId}</TableCell>
+                                    <TableCell>{n.category.name}</TableCell>
                                     <TableCell>{n.initial}</TableCell>
                                     <TableCell>{n.name}</TableCell>
                                     <TableCell>
