@@ -183,7 +183,7 @@ class Variants extends React.Component {
         return (
             <div>
                 <h1>List of Variant</h1>
-                <CreateVariant createNew={this.state.createNew} handleToggle={this.handleToggle} handleClose={this.handleClose} handleChange={this.handleChange} handleChangeCheckBox={this.handleChangeCheckBox} handleSubmit={this.handleSubmit} variant={this.state.variant} />
+                <CreateVariant createNew={this.state.createNew} handleToggle={this.handleToggle} handleClose={this.handleClose} handleChange={this.handleChange} handleChangeCheckBox={this.handleChangeCheckBox} handleSubmit={this.handleSubmit} variant={this.state.variant} variants={this.state.variants}/>
                 <EditVariant editVariant={this.state.editVariant} handleClose={this.handleClose} handleChange={this.handleChange} handleChangeCheckBox={this.handleChangeCheckBox} handleSubmit={this.handleSubmit} variant={this.state.variant} />
                 <DeleteVariant deleteVariant={this.state.deleteVariant} handleClose={this.handleClose} handleSubmit={this.handleDeleteConfirm} variant={this.state.variant} />
                 <CircularProgress className={classes.progress} style={{visibility: (load ? 'visible' : 'hidden') }} color="secondary" />
